@@ -1,0 +1,16 @@
+#puzzle-container {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .puzzle-piece {
+    width: 198px;
+    height: 198px;
+    border: 2px solid black;
+    background-size: 800px 800px;
+    cursor: pointer;
+  }
+  
