@@ -61,6 +61,7 @@ section{
     padding-top: 60px;
   }
   
+  
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
@@ -122,20 +123,7 @@ section{
     margin-left: 40px;
   }
   
-  .message {
-    background-color: yellow;
-    color: #333;
-    font-weight: 900;
-    position: relative;
-    padding-left: 0.5rem;
-    top: 0.2rem;
-    left: 270px;
-    animation: openclose 5s ;
-  }
   
-  .word1, .word2, .word3 {
-    font-family: tahoma;
-  }
   
   @keyframes openclose {
     0% {
@@ -160,7 +148,7 @@ section{
   }
   
   
-
+ 
   
   a {
     font-size: 2em;
@@ -169,7 +157,7 @@ section{
     letter-spacing: 0.1em;
   }
   
-
+  
 
   @font-face {
     font-family: Doko-Book;
@@ -268,6 +256,13 @@ section{
     display: none;
 }
 
+
+.gifcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header .search-form{
     position: absolute;
     top:115%; right: 7%;
@@ -359,33 +354,43 @@ section{
 
 .home{
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
-    align-items: right ;
-    background-clip :url(../TE_MINI_PROJECT/images/personality.gif);
+    align-items: center ;
+    background-clip :url(../images/home.gif);
     background-size:cover;
-    background-position: right;
-    background-image: url(../TE_MINI_PROJECT/images/personality.gif);
+    background-position: center;
+    background-image: url(../images/home.gif);
 }
 
 .home .content{
-    max-width: 60rem;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color: rgb(11, 13, 14);
+    text-align: right;
+    color: rgb(221, 203, 73);
 }
 
 .home .content p{
     font-size: 2rem;
     font-weight: bolder;
     font-style: oblique;
+    text-align: right;
     line-height: 1.8;
     padding:1rem 0;
     color:rgb(43, 26, 58);
 }
 
+.home .button {
+    height: 25px;
+    width: 25px;
+    align-items: right;
+}
 
 .about .row{
     display: flex;

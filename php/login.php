@@ -1,6 +1,6 @@
 <?php
-	require('database.php');
 	session_start();
+	include_once('./database.php');
 	if(isset($_SESSION["email"]))
 	{
 		session_destroy();
@@ -32,7 +32,7 @@
 			$_SESSION['id']=$row[0];
 			$_SESSION['email']=$row[2];
 			$_SESSION['password']=$row[3];
-			header('location: welcome.php?q=1'); 					
+			header('location: ../home.html?q=1'); 					
 		}
 	}
 ?>
@@ -44,9 +44,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Login | MOODify</title>
-		<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
-		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="../scripts/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../scripts/ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" href="../css/form.css">
         <style type="text/css">
             body{
                   width: 100%;
@@ -56,6 +56,39 @@
                   background-attachment: fixed;
                   background-size: cover;
                 }
+
+			.box.box-border {
+				border-radius: 15px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 20px;
+			}
+			input.form-control {
+				border: none;
+				border-radius: 9px !important;
+			}
+			button.btn.btn-primary.btn-block {
+				border: none;
+				border-radius: 9px;
+			}
+			.form-group.text-right {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			span.text-muted {
+				font-size: 14px;
+			}
+			a {
+				font-size: 16px;
+			}
+			.form-group.text-center {
+				font-size: 14px;
+			}
+			.form-group{
+				margin-top: 10px;
+			}
           </style>
 	</head>
 
@@ -71,11 +104,11 @@
 									<label>Enter Your Email Id:</label>
 									<input type="email" name="email" class="form-control">
 								</div>
-								<div class="form-group">
+								<div class="form-group" style="margin-top:10px;">
 									<label class="fw">Enter Your Password:
-										<a href="javascript:void(0)" class="pull-right">Forgot Password?</a>
+										<input type="password" name="password" class="form-control">
 									</label>
-									<input type="password" name="password" class="form-control">
+									<a href="javascript:void(0)" class="pull-right">Forgot Password?</a>
 								</div> 
 								<div class="form-group text-right">
 									<button class="btn btn-primary btn-block" name="submit">Login</button>
@@ -90,7 +123,7 @@
 			</div>
 		</section>
 
-		<script src="js/jquery.js"></script>
-		<script src="scripts/bootstrap/bootstrap.min.js"></script>
+		<script src="../script/jquery.js"></script>
+		<script src="../scripts/bootstrap/bootstrap.min.js"></script>
 	</body>
 </html>

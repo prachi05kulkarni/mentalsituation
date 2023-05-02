@@ -18,7 +18,7 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../mentalsituation/css/style.css" />
   </head>
   <body>
 
@@ -59,23 +59,23 @@
   
           <div class="row">
             <div class="image">
-              <img src="../images/contact_us.png" alt="" height="450" width="450"/>
+              <img src="../mentalsituation/images/contact_us.png" alt="" height="450" width="450"/>
             </div>
             
           
-          <form action="">
+          <form action="contatclogic.php" method="post">
             <h3>Get in touch</h3>
             <div class="inputBox">
               <span class="fas fa-user"></span>
-              <input type="text" placeholder="Name" /><br>
+              <input type="text" placeholder="Name" name="uname"/><br>
             </div>
             <div class="inputBox">
               <span class="fas fa-envelope"></span>
-              <input type="email" placeholder="email" /><br>
+              <input type="email" placeholder="email" name="uemail"/><br>
             </div>
             <div class="inputBox">
               <span class="fas fa-phone"></span>
-              <input type="number" placeholder="Number" />
+              <input type="number" placeholder="Number" name="uphone"/>
             </div>
             <input type="submit" value="contact now" class="btn" />
           </form>
@@ -126,7 +126,7 @@
     <!-- footer section ends -->
 
     <!-- custom js file link  -->
-    <script src="../script/script.js"></script>
+    <script src="../mentalsituation/script/script.js"></script>
   </body>
 </html>
 
