@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emotion Detector</title>
+    <style type="text/css">
+      #input {
+        width: 300px;
+        height: 100px;
+        font-size: 20px;
+        margin: 20px 0;
+      }
+
+      #output {
+        font-size: 50px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Emotion Detector</h1>
+
+    <textarea id="input" placeholder="Enter your text here"></textarea>
+    <button onclick="detect()">Detect Emotion</button>
+
+    <div id="output"></div>
+
+    <script type="text/javascript">
+      function detect() {
+        var input = document.getElementById("input").value;
+        var output = document.getElementById("output");
+
+        // Analyze sentiment of input text
+        // Here you could use a sentiment analysis API or library
+        // For simplicity, we'll just use some basic text analysis
+        var sentiment = "neutral";
+        if (
+          input.includes("good") ||
+          input.includes("happy") ||
+          input.includes("love") ||
+          imput.include("overjoyed") ||
+          input.includes("excited")
+        ) {
+          sentiment = "positive";
+        } else if (
+          input.includes("bad") ||
+          input.includes("sad") ||
+          input.includes("hate") ||
+          input.includes("low")
+        ) {
+          sentiment = "negative";
+        }
+
+        // Display emoticon based on sentiment
+        if (sentiment == "positive") {
+          output.innerHTML = "&#128522;";
+        } else if (sentiment == "negative") {
+          output.innerHTML = "&#128542;";
+        } else {
+          output.innerHTML = "&#128528;";
+        }
+      }
+    </script>
+  </body>
+</html>

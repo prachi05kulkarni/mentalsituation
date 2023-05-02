@@ -12,8 +12,6 @@ body {
   text-align: justify;
 }
 .section {
-  height: 100vh;
-  width: 100%;
   position: relative;
   padding: 0;
   text-align: left;
@@ -21,47 +19,47 @@ body {
   display: flex;
   justify-content: left;
   align-items: justify;
-text-emphasis-color: black;
+text-emphasis-color: rgb(138, 237, 143);
   
 }
 .bg1 {
-  background-color: #ccc;
+  background-color: #989ceb;
   
 }
 .bg2 {
-  background-color: rgb(202, 154, 154);
+  background-color:  #deb0f0;
 }
 .bg3 {
-    background-color: rgb(212, 168, 73);
+    background-color:  #989ceb;
   }
   .bg4 {
-    background-color: rgb(160, 125, 186);
+    background-color: #deb0f0;
   }
   .bg5 {
-    background-color: rgb(137, 137, 230);
+    background-color:  #989ceb;
   }
   .bg6 {
-    background-color: rgb(163, 232, 174);
+    background-color:  #deb0f0;
   }
   .bg7 {
-    background-color: rgb(241, 120, 120);
+    background-color:  #989ceb;
   }
   .bg8 {
-    background-color: rgba(18, 136, 128, 0.78);
+    background-color: #deb0f0;
   }
   .bg9 {
-    background-color: rgba(203, 18, 135, 0.658);
+    background-color:  #989ceb;
   }
   .bg10 {
-    background-color: rgb(144, 14, 124);
+    background-color: #deb0f0;
   }
   
 
-
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1.2;
   margin: 0;
+
 }
 .revealUp {
   opacity: 70%;

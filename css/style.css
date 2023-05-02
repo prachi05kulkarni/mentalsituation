@@ -61,6 +61,7 @@ section{
     padding-top: 60px;
   }
   
+  
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
@@ -122,20 +123,7 @@ section{
     margin-left: 40px;
   }
   
-  .message {
-    background-color: yellow;
-    color: #333;
-    font-weight: 900;
-    position: relative;
-    padding-left: 0.5rem;
-    top: 0.2rem;
-    left: 270px;
-    animation: openclose 5s ;
-  }
   
-  .word1, .word2, .word3 {
-    font-family: tahoma;
-  }
   
   @keyframes openclose {
     0% {
@@ -160,7 +148,7 @@ section{
   }
   
   
-
+ 
   
   a {
     font-size: 2em;
@@ -169,7 +157,7 @@ section{
     letter-spacing: 0.1em;
   }
   
-
+  
 
   @font-face {
     font-family: Doko-Book;

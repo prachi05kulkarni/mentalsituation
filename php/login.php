@@ -44,9 +44,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Login | MOODify</title>
-		<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
-		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="../scripts/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../scripts/ionicons/css/ionicons.min.css">
+		<link rel="stylesheet" href="../css/form.css">
         <style type="text/css">
             body{
                   width: 100%;
@@ -90,7 +90,7 @@
 			</div>
 		</section>
 
-		<script src="js/jquery.js"></script>
+		<script src="../script/jquery.js"></script>
 		<script src="scripts/bootstrap/bootstrap.min.js"></script>
 	</body>
 </html>
