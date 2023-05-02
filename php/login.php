@@ -124,6 +124,10 @@
 		</section>
 
 		<script src="../script/jquery.js"></script>
+<<<<<<< HEAD
 		<script src="../scripts/bootstrap/bootstrap.min.js"></script>
+=======
+		<script src="scripts/bootstrap/bootstrap.min.js"></script>
+>>>>>>> c85c694d82b36fe11fc87d4bcae792e43a27868b
 	</body>
 </html>
