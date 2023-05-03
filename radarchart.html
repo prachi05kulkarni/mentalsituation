@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <canvas id="myChart" width="800" height="400"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        // Your chart Goes Here !
+        type: "radar",
+        data: {
+          labels: [
+            "Happy",
+            "Supprise",
+            "Frustrated",
+            "Angry",
+            "Sad",
+            "Sucidal",
+          ],
+          datasets: [
+            {
+              label: "Emotion",
+              data: [96, 59, 35, 26, 15, 2],
+              fill: true,
+              backgroundColor: "rgba(91, 240, 143, 0.2)",
+              borderColor: "rgb(52, 235, 116)",
+              pointBackgroundColor: "rgb(52, 235, 116)",
+              pointBorderColor: "#fff",
+              pointHoverBackgroundColor: "#fff",
+              pointHoverBorderColor: "rgb(255, 99, 132)",
+            },
+          ],
+        },
+        options: {
+          elements: {
+            line: {
+              borderWidth: 3,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
